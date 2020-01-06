@@ -1,8 +1,17 @@
-import React from "react";
-import classes from "./App.module.css";
+import React, { Component } from "react";
 
-function App() {
-  return <div className={classes.App}></div>;
+import Layout from "./components/Layout/Layout";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Layout>
+          <p>Test</p>
+        </Layout>
+      </div>
+    );
+  }
 }
 
 export default App;
